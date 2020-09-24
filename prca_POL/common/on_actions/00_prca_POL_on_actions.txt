@@ -2,6 +2,7 @@
 # Use "set_country_flag = prca_disable_default_decisions" if you 
 # want to overwrite the posters of countries which are already 
 # included in the mod (e.g. Germany)
+
 on_actions = {
 	on_startup = {
 		effect = {
