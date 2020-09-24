@@ -1,0 +1,52 @@
+﻿###########################
+# Poland Campaigns Events
+###########################
+
+add_namespace = prca.POL
+
+country_event = {
+	id = prca.POL.1
+	
+	hidden = yes
+	
+	trigger = {
+		original_tag = POL
+		has_country_flag = prca_activate_leaflet
+	}
+
+	mean_time_to_happen = { days = 20 }
+	
+	immediate = {
+		clr_country_flag = prca_activate_leaflet
+		country_event = prca.4
+		random_list = {
+			33 = {
+				modifier = {
+					factor = 0
+					has_active_mission = prca_POL_hostile_leaflet_1
+				}
+				activate_mission = prca_POL_hostile_leaflet_1
+				set_variable = { THIS.frame = 12 }
+				THIS_activate_leaflet = yes
+			}
+			33 = {
+				modifier = {
+					factor = 0
+					has_active_mission = prca_POL_hostile_leaflet_2
+				}
+				activate_mission = prca_POL_hostile_leaflet_2
+				set_variable = { THIS.frame = 13 }
+				THIS_activate_leaflet = yes
+			}
+			33 = {
+				modifier = {
+					factor = 0
+					has_active_mission = prca_POL_hostile_leaflet_3
+				}
+				activate_mission = prca_POL_hostile_leaflet_3
+				set_variable = { THIS.frame = 14 }
+				THIS_activate_leaflet = yes
+			}
+		}
+	}
+}

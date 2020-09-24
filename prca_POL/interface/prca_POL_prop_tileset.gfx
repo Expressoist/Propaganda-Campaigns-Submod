@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_POL_prop_tileset"
+		texturefile = "gfx/interface/campaigns/POL_prop_tileset.dds"
+		noOfFrames = 14
+	}
+}
